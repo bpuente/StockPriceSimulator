@@ -2,23 +2,34 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+	private double currentPrice = 150.00;
+	private IDispatcherTimer timer;
+
 
 	public MainPage()
 	{
 		InitializeComponent();
+		SetUptimer();
+	}
+
+	private void SetUptimer()
+	{
+		timer = Application.Current.Dispatcher.CreateTimer();
+		timer.Interval = TimeSpan.FromSeconds(2);
+		timer.Tick += UpdateStockPrice;
+		timer.Start();
+	}
+
+	private void UpdateStockPrice(object sender,EventArgs e)
+	{
+		var random = new Random();
+		var Change = Math.Round((random.NextDouble()-.05),2);
+
 	}
 
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		
 	}
 }
 
