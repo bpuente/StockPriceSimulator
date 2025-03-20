@@ -26,9 +26,10 @@ public partial class MainPage : ContentPage
 		var Change = Math.Round((random.NextDouble()-.05),2);
 		var newPice = Math.Round(currentPrice+Change,2);
 
-		StockPriceLabel.Text="${newPrice>[F2]}";
+		StockPriceLabel.Text=$"${newPice:[F2]}";
+        
 
-		if (newPice>currentPrice)
+        if (newPice>currentPrice)
 		{
 			trendIndicastor.Text = "↑";
 			trendIndicastor.TextColor = Colors.Green;
@@ -40,15 +41,12 @@ public partial class MainPage : ContentPage
         }
 		else
 		{
-
-		}
+            trendIndicastor.Text = "-";
+            trendIndicastor.TextColor = Colors.Gray;
+        }
 		
     }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		
-	}
 }
 
 
