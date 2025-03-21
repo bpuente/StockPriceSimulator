@@ -26,8 +26,9 @@ public partial class MainPage : ContentPage
 		var Change = Math.Round((random.NextDouble()-.05),2);
 		var newPice = Math.Round(currentPrice+Change,2);
 
-		StockPriceLabel.Text=$"${newPice:[F2]}";
-        
+		StockPriceLabel.Text=$"${newPice:F2}";
+        LastUpdateLabel.Text = $"Last Updated: {DateTime.Now.ToLocalTime():T}";
+
 
         if (newPice>currentPrice)
 		{
