@@ -12,6 +12,7 @@
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
                      <Label x:Name="StockPriceLabel" Text="$150.00" FontSize="32"></Label>
                     <Label x:Name="trendIndicastor" Text="-" FontSize="24" TextColor="Gray"></Label>
+                    <Label Text="hola"></Label>
                </StackLayout>
 
                 <Label x:Name=" LastUpdateLabel" Text="Last update:" HorizontalOptions="Center"></Label> 
