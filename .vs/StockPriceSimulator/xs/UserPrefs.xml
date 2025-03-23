@@ -1,10 +1,18 @@
 ﻿<Properties StartupConfiguration="{9BFEF534-17C4-412C-8896-8A8BE90BA280}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.ItemProperties.StockPriceSimulator PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <DisabledProjects>
+    <String>../StockSimulator/StockSimulator.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workbench ActiveDocument="MainPage.xaml.cs">
     <Files>
-      <File FileName="MainPage.xaml.cs" Line="12" Column="16" />
+      <File FileName="MainPage.xaml.cs" Line="36" Column="33" />
       <File FileName="MainPage.xaml" />
     </Files>
     <Pads>
@@ -21,12 +29,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.StockPriceSimulator PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <DisabledProjects>
-    <String>../StockSimulator/StockSimulator.csproj</String>
-  </DisabledProjects>
 </Properties>
