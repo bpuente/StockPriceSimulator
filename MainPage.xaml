@@ -8,7 +8,7 @@
             <VerticalStackLayout Spacing="15">
                    <Label Text="StockPriceViewer" FontSize="24" HorizontalOptions="Center">
                     </Label>
-                    <Label Text="StockSymbol>AAPL" FontSize="18" HorizontalOptions="Center"></Label>
+                    <Label Text="StockSymbol:AAPL" FontSize="18" HorizontalOptions="Center"></Label>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
                      <Label x:Name="StockPriceLabel" Text="$150.00" FontSize="32"></Label>
                     <Label x:Name="trendIndicastor" Text="-" FontSize="24" TextColor="Gray"></Label>
